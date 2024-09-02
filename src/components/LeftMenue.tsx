@@ -2,6 +2,7 @@ import React from "react";
 import ProfileCard from "./ProfileCard";
 import Link from "next/link";
 import Image from "next/image";
+import Ad from "./Ad";
 
 const LeftMenue = ({ type }: { type: "home" | "profile" }) => {
   return (
@@ -87,8 +88,8 @@ const LeftMenue = ({ type }: { type: "home" | "profile" }) => {
           <Image src="/settings.png" width={20} height={20} alt="Posts" />
           <span>Settings</span>
         </Link>
-        <hr className="border-t-1 border-gray-50 w-36 self-center" />
       </div>
+      <Ad size="sm" />
     </div>
   );
 };
